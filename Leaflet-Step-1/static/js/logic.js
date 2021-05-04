@@ -64,3 +64,12 @@ var myMap = L.map("map", {
           "<div class=\"min\">" + limits[0] + "</div>" +
           "<div class=\"max\">" + limits[limits.length - 1] + "</div>" +
         "</div>";
+
+        div.innerHTML = legendInfo;
+  
+        limits.forEach(function(limit, index) {
+          labels.push("<li style=\"background-color: " + colors[index] + "\"></li>");
+        });
+    
+        div.innerHTML += "<ul>" + labels.join("") + "</ul>";
+        return div;
