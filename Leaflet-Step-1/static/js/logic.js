@@ -41,4 +41,11 @@ var myMap = L.map("map", {
        color: "#fff",
        weight: 1,
        fillOpacity: 0.8
-     }, 
+     },
+     
+     // Binding a pop-up to each layer
+     onEachFeature: function(feature, layer) {
+        layer.bindPopup("Coordinates: " + feature.geometry.coordinates + "<br>Earthquake Magnitude:<br>" +
+          feature.properties.mag);
+      }
+    }).addTo(myMap);
