@@ -27,3 +27,9 @@ var myMap = L.map("map", {
 
         // Define what  property in the features to use
       valueProperty: "mag",
+
+      // Set color scale
+      scale: ["#ffffb2", "#b10026"],
+  
+      // Number of breaks in step range
+      steps: 10,
