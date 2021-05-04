@@ -49,3 +49,13 @@ var myMap = L.map("map", {
           feature.properties.mag);
       }
     }).addTo(myMap);
+
+    // Set up the legend
+    var legend = L.control({ position: "bottomright" });
+    legend.onAdd = function() {
+      var div = L.DomUtil.create("div", "info legend");
+      var limits = geojson.options.limits;
+      var colors = geojson.options.colors;
+      var labels = [];
+
+      
