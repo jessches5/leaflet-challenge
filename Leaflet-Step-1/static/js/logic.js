@@ -33,3 +33,12 @@ var myMap = L.map("map", {
   
       // Number of breaks in step range
       steps: 10,
+
+     // q for quartile, e for equidistant, k for k-means
+     mode: "q",
+     style: {
+       // Border color
+       color: "#fff",
+       weight: 1,
+       fillOpacity: 0.8
+     }, 
