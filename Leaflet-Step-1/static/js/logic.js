@@ -73,3 +73,10 @@ var myMap = L.map("map", {
     
         div.innerHTML += "<ul>" + labels.join("") + "</ul>";
         return div;
+
+    };
+  
+    // Adding legend to the map
+    legend.addTo(myMap);
+  
+  });
