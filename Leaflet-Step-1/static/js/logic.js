@@ -17,3 +17,4 @@ var myMap = L.map("map", {
   // Load in geojson data
   var geoData = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson";
   
+  var geojson;
