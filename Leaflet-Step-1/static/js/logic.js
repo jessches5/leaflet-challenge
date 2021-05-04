@@ -24,3 +24,6 @@ var myMap = L.map("map", {
 
     // Create a new choropleth layer
     geojson = L.choropleth(data, {
+
+        // Define what  property in the features to use
+      valueProperty: "mag",
