@@ -58,4 +58,9 @@ var myMap = L.map("map", {
       var colors = geojson.options.colors;
       var labels = [];
 
-      
+      / Add min & max
+      var legendInfo = "<h1>Earthquake Magnitudes</h1>" +
+        "<div class=\"labels\">" +
+          "<div class=\"min\">" + limits[0] + "</div>" +
+          "<div class=\"max\">" + limits[limits.length - 1] + "</div>" +
+        "</div>";
